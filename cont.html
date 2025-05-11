@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eafae9; /* Fundo verde claro */
+      color: #2d2d2d;
+      padding: 0 20px;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #2e7d32;
+      color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .input-field {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #2e7d32;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #2e7d32;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    button {
+      background-color: #2e7d32;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1c5e29;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer a {
+      color: #2e7d32;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Entre em Contato Conosco</h1>
+</header>
+
+<section>
+  <h2>Preencha o Formulário</h2>
+  <form action="#" method="post">
+    
+    <div class="input-field">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+    </div>
+    
+    <div class="input-field">
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text" id="sobrenome" name="sobrenome" required placeholder="Seu sobrenome">
+    </div>
+    
+    <div class="input-field">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
+    </div>
+    
+    <div class="input-field">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" required placeholder="Deixe sua mensagem aqui..."></textarea>
+    </div>
+
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+</section>
+
+<div class="footer">
+  <p>&copy; 2025 - Todos os direitos reservados | <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+</div>
+
+</body>
+</html>
